@@ -25,7 +25,7 @@ class Application
     elsif req.path.match(/add/)
      item_to_add = req.params["item"]
       if handle_search(item_to_add) == "Couldn't find #{item_to_add}"
-        resp.write "Item is not available"
+        resp.write "We don't have that item"
       else
         @@cart << item_to_add
         resp.write "added #{item_to_add}"
