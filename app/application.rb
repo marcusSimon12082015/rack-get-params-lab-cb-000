@@ -24,7 +24,7 @@ class Application
         puts "Item is not available"
       else
         @@cart << item_to_add
-      end           
+      end
     else
       resp.write "Path Not Found"
     end
